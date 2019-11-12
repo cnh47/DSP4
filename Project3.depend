@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1541863805 source:d:\data structures\projects\project3\sorting.cpp
+	<iostream>
+	<fstream>
+	<ctime>
+	<string>
+	<cstdlib>
+	"insertsort.h"
+	"heapsort.h"
+	"mergesort.h"
+	"quicksort.h"
+
+1541571656 d:\data structures\projects\project3\insertsort.h
+	<vector>
+
+1541570577 d:\data structures\projects\project3\heapsort.h
+	<vector>
+
+1541571998 d:\data structures\projects\project3\mergesort.h
+	<vector>
+
+1541863541 d:\data structures\projects\project3\quicksort.h
+	<vector>
+
