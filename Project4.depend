@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1573735403 source:c:\users\saxgu\desktop\dsp4\sorting.cpp
+	<iostream>
+	<fstream>
+	<ctime>
+	<string>
+	<cstdlib>
+	"insertsort.h"
+	"heapsort.h"
+	"mergesort.h"
+	"quicksort.h"
+
+1573735403 c:\users\saxgu\desktop\dsp4\insertsort.h
+	<vector>
+
+1573734608 c:\users\saxgu\desktop\dsp4\heapsort.h
+	<vector>
+
+1573735403 c:\users\saxgu\desktop\dsp4\mergesort.h
+	<vector>
+
+1573735403 c:\users\saxgu\desktop\dsp4\quicksort.h
+	<vector>
+
