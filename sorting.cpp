@@ -18,7 +18,7 @@ void displayVect(const vector<int> x);
 int main()
 {
     vector<int> vectToCopySmall;
-    vector<int> vectorToSorts;
+    vector<int> vectorToSort;
     int nInts = 0;
     std::ifstream sortFile;
     string inFileName;
@@ -46,14 +46,6 @@ int main()
 
 
 
-    // -------------------------------
-    // BEGIN SMALL SORT
-    // -------------------------------
-// Random Number Gen Stuff
-    // get input f
-    // -------------------------------
-    // BEGIN BIG SORT
-    // -------------------------------or small array
     while(sortFile >> fromFile)
         vectToCopySmall.push_back(fromFile);
 
