@@ -1,4 +1,4 @@
-// Tim Inzitari
+// Chayton Hamric
 #include <iostream>
 #include <fstream>
 #include <ctime>
@@ -106,18 +106,7 @@ int main()
     quicksort(vectorToSort);
     cout << "vector after quick sort (no cutoff): ";
     displayVect(vectorToSort);
-    // SMALL QUICK SORT <no cuttoff> SORT END
 
-    // -------------------------------
-    // END SMALL SORT
-    // -------------------------------
-
-
-    // -------------------------------
-    // BEGIN BIG SORT
-    // -------------------------------
-
-    // SET CLOCK VARIABLES
     clock_t start, stop;
 
     // seed random
@@ -142,11 +131,6 @@ int main()
 
     cout << "\nruntime of algorithms for N = " << nInts << " items." << std::endl;
 
-
-
-    // BIG HEAPSORT
-
-        // RANDOM
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigRandom.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigRandom[i]);
@@ -156,9 +140,7 @@ int main()
         stop = clock ();
         cout << "heapsort random: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // END RANDOM
 
-        //ASSEND
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigAscend.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigAscend[i]);
@@ -168,9 +150,7 @@ int main()
         stop = clock ();
         cout << "heapsort ascend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Ascend
 
-        //DESCEND
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigDescend.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigDescend[i]);
@@ -180,16 +160,7 @@ int main()
         stop = clock ();
         cout << "heapsort descend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Descend
 
-
-    // END BIG HEAP
-
-
-
-        // BIG MERGESORT
-
-        // RANDOM
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigRandom.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigRandom[i]);
@@ -211,10 +182,7 @@ int main()
         stop = clock ();
         cout << "merge sort ascend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Descend;
-        // end Ascend
 
-        //DESCEND
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigDescend.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigDescend[i]);
@@ -224,17 +192,7 @@ int main()
         stop = clock ();
         cout << "merge sort descend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Descend
 
-
-    // END BIG MergeSort
-
-
-
-
-        // BIG QUICK SORT
-
-        // RANDOM
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigRandom.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigRandom[i]);
@@ -244,9 +202,7 @@ int main()
         stop = clock ();
         cout << "quick sort (no cutoff) random: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // END RANDOM
 
-        //ASSEND
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigAscend.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigAscend[i]);
@@ -256,10 +212,7 @@ int main()
         stop = clock ();
         cout << "quick sort (no cutoff) ascend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Descend;
-        // end Ascend
 
-        //DESCEND
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigDescend.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigDescend[i]);
@@ -269,14 +222,7 @@ int main()
         stop = clock ();
         cout << "quick sort (no cutoff) descend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Descend
 
-
-    // END BIG Quick Sort
-
-        // BIG Insert SORT
-
-        // RANDOM
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigRandom.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigRandom[i]);
@@ -286,9 +232,7 @@ int main()
         stop = clock ();
         cout << "insertion sort random: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // END RANDOM
 
-        //ASSEND
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigAscend.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigAscend[i]);
@@ -298,9 +242,7 @@ int main()
         stop = clock ();
         cout << "insertion sort ascend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Ascend
 
-        //DESCEND
         vectorToSort.clear(); // reset vector to nothing
         for (int i = 0; i < vectToCopyBigDescend.size(); ++i) // populate
             vectorToSort.push_back(vectToCopyBigDescend[i]);
@@ -310,10 +252,7 @@ int main()
         stop = clock ();
         cout << "insertion sort descend: " << double(stop-start)/double(CLOCKS_PER_SEC);
         cout << std::endl;
-        // end Descend
 
-
-    // END BIG Insert Sort
     return 0;
 
 }
@@ -324,4 +263,3 @@ void displayVect( const vector<int> x)
         cout << " " << x[i];
     cout << std::endl;
 }
-

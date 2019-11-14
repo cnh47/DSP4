@@ -1,6 +1,6 @@
 #ifndef MERGESORT_H_INCLUDED
 #define MERGESORT_H_INCLUDED
-//Tim Inzitari
+//Chayton Hamric
 //pages 306 and 307 of the book
 #include <vector>
 using std::vector;

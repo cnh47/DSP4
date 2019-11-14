@@ -1,6 +1,6 @@
 #ifndef QUICKSORT_H_INCLUDED
 #define QUICKSORT_H_INCLUDED
-// Tim Inzitari
+// Chayton Hamric
 // pages 316 and 317
 #include <vector>
 using std::vector;

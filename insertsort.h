@@ -3,20 +3,6 @@
 // From pg 294 of the Book
 #include <vector>
 using std::vector;
-/*template <typename Comparable>
-void insertionSort (vector<Comparable> & a )
-{
-    for (int p =1; p<a.size(); ++p)
-    {
-        Comparable tmp = std::move (a[p]);
-
-        int j;
-        for (int j = p; j>0 && tmp < a[j-1]; --j)
-            a[j]=std::move(a[j-1]);
-        a[j] = std::move(tmp);
-    }
-}
-*/
 template<typename Iterator, typename Comparator>
 void insertionSort(const Iterator &begin, const Iterator &end, Comparator lessThan);
 template <typename Iterator>
